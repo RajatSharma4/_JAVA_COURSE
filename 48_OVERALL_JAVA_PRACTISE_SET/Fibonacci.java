@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Fibonacci {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of print the series :");
+        int n = sc.nextInt();
+        int a = 0; 
+        int b = 1;
+    
+        System.out.println("Fibonacci series till " + n + " terms:");
+        for(int i=1; i<=n; i++){
+            System.out.print(a + ", ");
+
+            int c =a+b;
+            a = b;
+            b = c;
+        }
+        sc.close();
+    }
+    
+}
